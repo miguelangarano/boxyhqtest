@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  jackson:
+    image: boxyhq/jackson
+    ports:
+      - '5225:5225'
+    env_file:
+      - .env
+    restart: always
